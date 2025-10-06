@@ -28,3 +28,12 @@ def listen_for_command(activation_phrase: str) -> bool:
         except sr.RequestError as e:
             print(f"Could not request results from Google Speech Recognition service; {e}")
             return False
+
+
+# Add this to the end of audio.py
+if __name__ == '__main__':
+    speak("Testing text to speech module. Can you hear me?")
+    if listen_for_command("hello world"):
+        speak("Command received.")
+    else:
+        speak("Did not hear the command.")
