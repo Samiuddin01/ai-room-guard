@@ -1,0 +1,12 @@
+# For Face Recognition
+cmake==3.27.7
+dlib==19.24.2
+face-recognition==1.3.0
+numpy==1.23.5
+opencv-python==4.8.1.78
+Pillow==10.1.0
+
+# For Audio I/O
+SpeechRecognition==3.10.1
+PyAudio==0.2.14
+pyttsx3==2.90
